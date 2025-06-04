@@ -37,7 +37,7 @@ body {
 }
 
 .header {
-    background-image: url(images/fondo4.jpg);
+    background-image: url(images/fondo.jpgg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -198,7 +198,7 @@ h2 {
 }
 
 .welcome-1 {
-    background-image: url(images/TU\ IMAGEN\ NO\ BORRAR.jpg);
+    background-image: url(images/cabello.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -325,7 +325,7 @@ td {
 }
 
 .prices-2 {
-    background-image: url(images/catalogo\ 2.png);
+    background-image: url(images/catalogo.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -510,7 +510,7 @@ td {
 }
 
 .footer-bg {
-    background-image: url(images/Reservar\ cita\ 4.jpg);
+    background-image: url(images/reservar-cita-2.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
