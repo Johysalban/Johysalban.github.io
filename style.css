@@ -843,10 +843,19 @@ textarea {
         width: 250px !important;
     }
 
-    
-
-
-
+    /* Ajustes para móvil */
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+}
 
 
 }
