@@ -613,7 +613,7 @@ textarea {
 
     /* ===== TÍTULO PRINCIPAL PERFECTAMENTE CENTRADO ===== */
     .header-txt h1 {
-        font-size: 72px !important;
+        font-size: 80px !important;
         font-weight: 900 !important;
         line-height: 0.85 !important;
         letter-spacing: 3px !important;
@@ -632,7 +632,7 @@ textarea {
         font-size: 28px !important;
         font-weight: 600 !important;
         line-height: 1.2 !important;
-        letter-spacing: 4px !important;
+        letter-spacing: 6.5px !important;
         color: #931765 !important;
         margin: 0 auto 30px auto !important;
         padding: 0 10px !important;
@@ -645,13 +645,13 @@ textarea {
 
     /* ===== PÁRRAFO CENTRADO ===== */
     .header-txt p {
-        font-size: 16px !important;
+        font-size: 17px !important;
         line-height: 1.6 !important;
         color: #afafaf !important;
         margin: 0 auto 30px auto !important;
-        padding: 0 25px !important;
+        padding: 0 15px !important;
         text-align: center !important;
-        max-width: 90% !important;
+        max-width: 100% !important;
         display: block !important;
     }
 
@@ -668,7 +668,7 @@ textarea {
         background-color: #ad4185 !important;
         color: #FFFFFF !important;
         border: none !important;
-        border-radius: 5px !important;
+        border-radius: 45px !important;
         text-decoration: none !important;
         text-transform: uppercase !important;
         font-weight: 600 !important;
@@ -682,7 +682,7 @@ textarea {
         align-items: center !important;
         justify-content: center !important;
         gap: 35px !important;
-        margin: 25px auto 0 auto !important;
+        margin: 10px auto 0 auto !important;
         width: 100% !important;
         text-align: center !important;
         padding: 0 20px !important;
