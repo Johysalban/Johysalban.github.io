@@ -554,13 +554,14 @@ textarea {
     background-color: #070707;
 }
 
+/* ===== MEDIA QUERIES ARREGLADOS PARA MOBILE ===== */
 @media(max-width:991px) {
 
     .logo-img {
-        height: 50px; /* Más pequeño en celular */
+        height: 50px;
         width: auto;
-        margin-left: -1px; /* Ajuste para celular */
-        margin-top: ;
+        margin-left: -1px;
+        margin-top: 10px;
     } 
 
     .menu {
@@ -589,60 +590,94 @@ textarea {
     }
 
     .header {
-        min-height: 0vh;
+        min-height: 100vh; /* Cambiado de 0vh a 100vh para dar altura suficiente */
+        padding: 0;
+        overflow: hidden; /* Evita espacios en blanco laterales */
     }
 
     .header-content {
-        padding: 125px 30px 50px 30px;
+        padding: 120px 15px 40px 15px; /* Reducido padding lateral */
         text-align: center;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
     }
 
     .header-txt {
-        margin-bottom: 15px;
+        margin-bottom: 25px;
+        width: 100%;
+        overflow: hidden; /* Evita desbordamientos */
     }
 
+    /* ===== AQUÍ ESTÁ EL ARREGLO PRINCIPAL ===== */
     .header-txt h1 {
-        font-size: 72px;
-        margin-bottom: 0;
-        line-height: 0%;
+        font-size: 48px !important; /* Reducido considerablemente */
+        margin-bottom: 5px !important;
+        line-height: 1.1 !important; /* Línea ajustada */
+        letter-spacing: 2px !important; /* Reducido spacing */
+        word-wrap: break-word;
+        width: 100%;
+        max-width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
     }
 
     .header-txt h2 {
-        font-size: 26px;
-        margin: 5px 0 15px 0;
-        padding: 15px;
-        letter-spacing: 8px;
-        padding: 0;
-        position: relative;
-        color: #931765  ;
+        font-size: 20px !important; /* Más pequeño y proporcionado */
+        margin: 8px 0 20px 0 !important;
+        letter-spacing: 3px !important; /* Reducido spacing */
+        padding: 0 10px !important;
+        color: #931765;
         font-weight: normal;
-        left: 3px;
-
+        line-height: 1.2;
+        word-wrap: break-word;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
     }
 
     .header-txt p {
-        padding: 0;
-        margin: 10px 0;
+        padding: 0 10px !important; /* Padding lateral reducido */
+        margin: 15px 0 !important;
+        font-size: 14px;
+        line-height: 1.5;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .btn-1 {
+        margin-top: 20px !important;
+        font-size: 14px;
+        padding: 12px 20px;
     }
 
     .header-dir {
         display: flex;
         flex-direction: column;
-        gap: 8px;
-        margin-top: 15px;
+        gap: 15px;
+        margin-top: 25px;
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
     }
 
     .dir {
-        margin-bottom: -25px;
-        /* Espacio mínimo entre grupos */
+        margin-bottom: 0;
+        width: 100%;
+        text-align: center;
     }
 
+    .dir h3 {
+        font-size: 18px !important;
+        margin-bottom: 5px;
+    }
 
     .dir p {
-        font-size: 16px;
-        margin: 0px;
+        font-size: 14px !important;
+        margin: 0;
         position: relative;
-        top: -5px;
+        top: 0;
     }
 
     .welcome {
@@ -655,47 +690,50 @@ textarea {
 
     .welcome-2 {
         width: 100%;
-        padding: 30px;
+        padding: 40px 20px;
         text-align: center;
     }
 
     h2 {
-        font-size: 70px;
-        line-height: 80px;
+        font-size: 60px !important;
+        line-height: 1.1 !important;
     }
 
     p {
         margin: 15px 0;
+        font-size: 14px;
     }
 
     .services {
-        padding: 30px;
+        padding: 40px 20px;
     }
 
     .services-txt h2 {
         margin-top: 20px;
         width: 100%;
-        font-size: 80px;
-        line-height: 65px;
+        font-size: 60px !important;
+        line-height: 1.1 !important;
         text-align: center;
     }
 
     .services-txt p {
-        padding: 0;
+        padding: 0 10px;
+        font-size: 14px;
     }
 
     .services-group {
         flex-direction: column;
-        margin: 0;
+        margin: 20px 0;
     }
 
     .services-1 {
         margin: 0 0 20px 0;
+        padding: 25px 20px;
     }
 
     .services .btn-1 {
-        margin: 25px;
-        margin-top: -30px;
+        margin: 25px auto;
+        margin-top: 20px;
     }
 
     .prices {
@@ -705,157 +743,149 @@ textarea {
 
     .prices-1 {
         width: 100%;
-        padding: 30px;
+        padding: 40px 20px;
         text-align: center;
     }
 
     .prices-1 h2 {
         text-align: center;
+        font-size: 60px !important;
     }
 
     table {
-        width: 425px;
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
         text-align: right;
         border-collapse: collapse;
     }
 
     .prices-1 .btn-1 {
-        margin: 25px;
-        margin-top: -30px;
+        margin: 25px auto;
+        margin-top: 20px;
     }
 
     .prices-2 {
         display: none;
     }
 
-    .personal-txt h2 {
-        margin-top: -30px !important;  /* Sube el título 15px (ajusta este valor) */
-        margin-bottom: 5px !important;  /* Reduce espacio inferior si es necesario */
+    .personal {
+        padding: 40px 20px;
     }
 
-    /* Opcional: Ajustar la línea roja para que siga al título */
+    .personal-txt h2 {
+        margin-top: 0 !important;
+        margin-bottom: 15px !important;
+        font-size: 50px !important;
+    }
+
     .personal-txt h2::after {
-        margin-top: 8px !important;  /* Acompaña el movimiento del título */
+        margin-top: 10px !important;
     }
 
     .personal-content {
         flex-direction: column;
-        /* Apila foto y texto */
         gap: 30px !important;
-        padding: 0 15px;
+        padding: 0 10px;
+        max-width: 100%;
     }
 
     .personal-photo {
         min-width: 100% !important;
-        /* Ocupa todo el ancho */
         margin-bottom: 20px;
+        margin-top: 0;
     }
 
     .personal-info {
         text-align: center !important;
-        /* Centra todo el texto */
         padding: 0 10px;
+        width: 100%;
     }
 
     .quote {
-        font-family: 'GFS Didot', serif;
-        font-style: italic;
-        color: #fcca34;  /* Blanco roto más cálido */
-        font-size: 19px !important;  /* Tamaño óptimo para móvil */        color: #d5c39f; /* Beige claro premium */
-        letter-spacing: 0.2px;  /* Más compacto */
-        line-height: 1.5;  /* Espaciado entre líneas ajustado */
-        text-rendering: optimizeLegibility;
-        text-shadow: 0 1px 2px rgba(0,0,0,0.1);  /* Sutil profundidad */
+        font-size: 18px !important;
+        margin-bottom: 25px !important;
+        margin-top: 0 !important;
+        padding: 0 15px !important;
+        line-height: 1.5;
         letter-spacing: 0.3px;
-        font-size: 20px !important;
-        margin-bottom: 30px !important;  /* Reduce espacio inferior */
-        margin-top: -10px !important;  /* Sube el bloque 10px */
-        padding-top: 0 !important;
     }
 
-    .quote {
-    position: relative;
-    }
     .quote::before, .quote::after {
-        content: "";
-        position: absolute;
-        width: 30%;
-        height: 1px;
-        background: rgba(202, 202, 202, 0.493);  /* Línea roja tenue */
-        left: 35%;
+        width: 25%;
+        left: 37.5%;
     }
     .quote::before { top: -8px; }
     .quote::after { bottom: -8px; }
 
     .skills-list h4 {
-        font-size: 30px !important;
-        /* Tamaño más grande */
-        letter-spacing: 2px;
-        /* Sube el título */
+        font-size: 24px !important;
         margin-bottom: 15px;
-        /* Espacio antes de la lista */
     }
 
     .credentials h4 {
-        font-size: 22px !important;
-        /* Mismo tamaño que "EXPERIENCIA" */
-        letter-spacing: 1px;
-        margin-top: 0px;
-        /* Sube el título */
-        margin-bottom: 10px;
-        /* Espacio antes del texto */
+        font-size: 24px !important;
+        margin-top: 20px;
+        margin-bottom: 15px;
     }
 
     .skills-list,
     .credentials {
         max-width: 100% !important;
-        /* Aprovecha mejor el ancho */
         text-align: center;
+        padding: 0 15px;
     }
 
     .skills-list ul,
     .credentials ul {
         display: inline-block;
         text-align: left;
-        /* Alineación natural para listas */
-    }
-
-    .skills-list li::before {
-        top: -2px !important;
-        /* Ajuste fino de viñetas */
+        max-width: 100%;
     }
 
     .credentials {
         border-top: none;
-        padding-top: 10px !important;
+        padding-top: 20px !important;
     }
 
     .footer-bg {
-        padding: 30px;
+        padding: 40px 20px;
     }
 
     .footer-bg h2 {
-        font-size: 80px;
-        margin-top: 25px;
+        font-size: 60px !important;
+        margin-top: 0;
+        line-height: 1.1;
+    }
+
+    .campo {
+        width: 280px;
+        font-size: 14px;
     }
 
     textarea {
-        width: 250px !important;
+        width: 280px !important;
     }
 
-    /* Ajustes para móvil */
-@media (max-width: 600px) {
-  body {
-    font-size: 16px;
-    padding: 10px;
-  }
-  h1 {
-    font-size: 24px;
-  }
-  h2 {
-    font-size: 20px;
-  }
+    .footer-txt {
+        padding: 15px;
+        font-size: 14px;
+    }
 }
 
-
+/* Pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .header-txt h1 {
+        font-size: 42px !important;
+        letter-spacing: 1px !important;
+    }
+    
+    .header-txt h2 {
+        font-size: 18px !important;
+        letter-spacing: 2px !important;
+    }
+    
+    .campo, textarea {
+        width: 260px !important;
+    }
 }
