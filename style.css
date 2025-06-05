@@ -590,13 +590,13 @@ textarea {
     }
 
     .header {
-        min-height: 100vh; /* Cambiado de 0vh a 100vh para dar altura suficiente */
+        min-height: 100vh;
         padding: 0;
-        overflow: hidden; /* Evita espacios en blanco laterales */
+        overflow: hidden;
     }
 
     .header-content {
-        padding: 120px 15px 40px 15px; /* Reducido padding lateral */
+        padding: 120px 15px 40px 15px;
         text-align: center;
         width: 100%;
         max-width: 100%;
@@ -606,48 +606,53 @@ textarea {
     .header-txt {
         margin-bottom: 25px;
         width: 100%;
-        overflow: hidden; /* Evita desbordamientos */
+        overflow: hidden;
     }
 
-    /* ===== AQUÍ ESTÁ EL ARREGLO PRINCIPAL ===== */
+    /* ===== ARREGLO PRINCIPAL PARA EL TÍTULO ===== */
     .header-txt h1 {
-        font-size: 48px !important; /* Reducido considerablemente */
+        font-size: 65px !important; /* Tamaño más grande para que ocupe el ancho */
         margin-bottom: 5px !important;
-        line-height: 1.1 !important; /* Línea ajustada */
-        letter-spacing: 2px !important; /* Reducido spacing */
+        line-height: 0.9 !important; /* Línea más compacta */
+        letter-spacing: 1px !important; /* Reducido para que quepa */
         word-wrap: break-word;
         width: 100%;
         max-width: 100%;
-        padding: 0 10px;
+        padding: 0 5px !important; /* Padding mínimo a los lados */
         box-sizing: border-box;
+        white-space: nowrap; /* Evita que se rompa en líneas */
+        overflow: visible;
+        text-align: center;
     }
 
     .header-txt h2 {
-        font-size: 20px !important; /* Más pequeño y proporcionado */
-        margin: 8px 0 20px 0 !important;
-        letter-spacing: 3px !important; /* Reducido spacing */
+        font-size: 18px !important; /* Proporcionado al título */
+        margin: 0px 0 25px 0 !important; /* Sin margen superior */
+        letter-spacing: 2px !important;
         padding: 0 10px !important;
         color: #931765;
         font-weight: normal;
-        line-height: 1.2;
+        line-height: 1.1;
         word-wrap: break-word;
         width: 100%;
         max-width: 100%;
         box-sizing: border-box;
+        text-align: center;
     }
 
     .header-txt p {
-        padding: 0 10px !important; /* Padding lateral reducido */
-        margin: 15px 0 !important;
+        padding: 0 15px !important; /* Padding lateral */
+        margin: 20px 0 !important;
         font-size: 14px;
         line-height: 1.5;
         width: 100%;
         max-width: 100%;
         box-sizing: border-box;
+        text-align: center;
     }
 
     .btn-1 {
-        margin-top: 20px !important;
+        margin-top: 25px !important;
         font-size: 14px;
         padding: 12px 20px;
     }
@@ -655,8 +660,8 @@ textarea {
     .header-dir {
         display: flex;
         flex-direction: column;
-        gap: 15px;
-        margin-top: 25px;
+        gap: 20px;
+        margin-top: 30px;
         width: 100%;
         padding: 0 15px;
         box-sizing: border-box;
@@ -671,6 +676,7 @@ textarea {
     .dir h3 {
         font-size: 18px !important;
         margin-bottom: 5px;
+        color: #931765 !important; /* Color consistente */
     }
 
     .dir p {
@@ -678,6 +684,17 @@ textarea {
         margin: 0;
         position: relative;
         top: 0;
+        color: #FFFFFF !important; /* Para el número de teléfono */
+    }
+
+    /* ===== ARREGLO PARA EL NÚMERO DE TELÉFONO ===== */
+    .dir p a {
+        color: #FFFFFF !important; /* Quita el azul del enlace */
+        text-decoration: none !important; /* Sin subrayado */
+    }
+
+    .dir p a:hover {
+        color: #ad4185 !important; /* Color hover opcional */
     }
 
     .welcome {
@@ -876,13 +893,14 @@ textarea {
 /* Pantallas muy pequeñas */
 @media (max-width: 480px) {
     .header-txt h1 {
-        font-size: 42px !important;
-        letter-spacing: 1px !important;
+        font-size: 60px !important; /* Ajustado para pantallas pequeñas */
+        letter-spacing: 0.5px !important;
+        padding: 0 2px !important;
     }
     
     .header-txt h2 {
-        font-size: 18px !important;
-        letter-spacing: 2px !important;
+        font-size: 16px !important;
+        letter-spacing: 1.5px !important;
     }
     
     .campo, textarea {
